@@ -18,7 +18,7 @@ Route::get('/report-std-exception', function () {
  *
  */
 Route::get('/throw-std-exception-to-handler', function () {
-    throw new \App\Exceptions\NotCaughtStandardException('throw-std-exception-to-handler');
+    throw new \App\Exceptions\NotCaughtStandardException('throw-std-exception-to-handler', 418);
 });
 
 /**
@@ -26,8 +26,7 @@ Route::get('/throw-std-exception-to-handler', function () {
  */
 Route::get('/report-scoped-exception', function () {
     $exception = new \App\Exceptions\NotCaughtScopedException('report-scoped-exception', 418);
-
-    // $exception->addScope(/* add scope */);
+    $exception->addScope(\App\Exceptions\Scopes\DemoScope::class);
 
     report($exception);
 
@@ -40,8 +39,7 @@ Route::get('/report-scoped-exception', function () {
  */
 Route::get('/throw-scoped-exception-to-handler', function () {
     $exception = new \App\Exceptions\HttpNotCaughtScopedException('throw-scoped-exception-to-handler', 418);
-
-    // $exception->addScope(/* add scope */);
+    $exception->addScope(\App\Exceptions\Scopes\DemoScope::class);
 
     throw $exception;
 });

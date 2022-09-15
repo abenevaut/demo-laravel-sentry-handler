@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/abenevaut/laravel-sentry-handler.git",
-                "reference": "8815a8a7e4a7358943bf85f1c35aa0bb89a88911"
+                "reference": "cfe553305e39508bdc6c5fcd9875a5f6f5f6e640"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abenevaut/laravel-sentry-handler/zipball/8815a8a7e4a7358943bf85f1c35aa0bb89a88911",
-                "reference": "8815a8a7e4a7358943bf85f1c35aa0bb89a88911",
+                "url": "https://api.github.com/repos/abenevaut/laravel-sentry-handler/zipball/cfe553305e39508bdc6c5fcd9875a5f6f5f6e640",
+                "reference": "cfe553305e39508bdc6c5fcd9875a5f6f5f6e640",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "issues": "https://github.com/abenevaut/laravel-sentry-handler/issues",
                 "source": "https://github.com/abenevaut/laravel-sentry-handler/tree/master"
             },
-            "time": "2022-09-15T19:23:02+00:00"
+            "time": "2022-09-15T20:49:40+00:00"
         },
         {
             "name": "brick/math",
