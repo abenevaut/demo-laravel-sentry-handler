@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="demo" pattern="file[demo-laravel-sentry-handler]:app/Exceptions//*||file:routes/web.php" />
+</component>
