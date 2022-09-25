@@ -4,7 +4,7 @@ namespace App\Exceptions;
 
 use Symfony\Component\HttpFoundation\Response;
 
-class NotCaughtStandardException extends \Exception
+final class NotCaughtStandardException extends \Exception
 {
     /**
      * @return Response
